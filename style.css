@@ -1,0 +1,88 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	padding: 0px auto;
+	background-image: url(img/falloutTerminal2.jpg);
+}
+header {
+	font-family: Overseer;
+	color: black;
+	top: 0;
+	overflow: hidden;
+	background-image: url("img/FalloutBanner2.jpg");
+	grid-area: head;
+}
+header ul{
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+	
+}
+header ul :link {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+header ul :visited {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+header ul :hover {
+	list-style: none;
+	color: black;
+}
+
+#left {
+	width: 47%;
+	text-align: left;
+	margin: 1%;
+	min-width: 610px;
+	grid-area: left;
+}
+#right {
+	width: 47%;
+	margin: 1%;
+	display: flex;
+	min-width: 710px;
+	grid-area: right;
+}
+#all {
+	display: grid;
+	grid-template: 
+	"head head" auto
+	"left right" 1fr
+	"footer footer" auto;
+}
+.container {
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	padding: 8px;
+	background-color: #A3C49B;
+}
+.video {
+	position: fixed;
+	
+}
+article {
+	text-align: right;
+	font-style: italic;
+	margin: 2%;
+}
+footer {
+	background-color: black;
+	color: white;
+	grid-area: footer;
+}
+footer a {
+	color: white;
+}
